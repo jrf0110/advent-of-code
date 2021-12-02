@@ -1,0 +1,31 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "jrf0110@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "solve": "sh -c 'ts-node src/${0}.ts'"
+  },
+  "ava": {
+    "extensions": [
+      "ts",
+      "tsx"
+    ],
+    "files": [
+      "./src/**/*.test.ts",
+      "./src/**/*.test.tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "ava": "^3.15.0",
+    "husky": "^7.0.4",
+    "pretty-quick": "^3.1.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
